@@ -1,15 +1,26 @@
 import React from "react"
-import TodoItem from "./TodoItem"
-import todosData from "./todosData"
 
-function App() {
-    const todoItems = todosData.map(item => <TodoItem key={item.id} item={item}/>)
+// function App(props) {
+//     return (
+//         <div>
+//             <h1>{props.whatever}</h1>
+//         </div>
+//     )
+// }
+
+class App extends React.Component {
     
-    return (
-        <div className="todo-list">
-            {todoItems}
-        </div>
-    )
+    yourMethodHere() {
+        
+    }
+    
+    render() {
+        return (
+            <div>
+                <h1>{this.props.whatever}</h1>
+            </div>
+        )
+    }
 }
 
 export default App
